@@ -57,7 +57,7 @@ plotted_img = draw_rect(img_, bboxes_)
 cv2.imwrite("NewPhotos/" + fileName + "_7.jpg", plotted_img)
 
 #Adjusts brightness to be darker
-img_, bboxes_ = RandomBrightnessDown(60)(img.copy(), bboxes.copy())
+img_, bboxes_ = RandomBrightnessDown(40)(img.copy(), bboxes.copy())
 plotted_img = draw_rect(img_, bboxes_)
 cv2.imwrite("NewPhotos/" + fileName + "_8.jpg", plotted_img)
 
