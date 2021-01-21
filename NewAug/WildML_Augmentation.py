@@ -7,7 +7,7 @@ import pickle as pkl
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 imageName = "frame-399.jpg"
-fileName = imageName[:imageName.find('.jpg')] 3 cuts of .jpg so we can save new photos with same name
+fileName = imageName[:imageName.find('.jpg')] # cuts of .jpg so we can save new photos with same name
 
 # loads image
 img = cv2.imread(imageName)[:,:,::-1]   #opencv loads images in bgr. the [:,:,::-1] does bgr -> rgb
