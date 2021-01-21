@@ -1,5 +1,5 @@
-from data_aug.aug_fun import *
-from data_aug.bbox_util import *
+from Data_Aug.aug_fun import *
+from Data_Aug.bbox_util import *
 import numpy as np 
 import cv2 
 import matplotlib.pyplot as plt 
