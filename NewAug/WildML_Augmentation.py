@@ -7,12 +7,12 @@ import pickle as pkl
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 imageName = "frame-399.jpg"
-fileName = imageName[:imageName.find('.jpg')]
+fileName = imageName[:imageName.find('.jpg')] 3 cuts of .jpg so we can save new photos with same name
 
-fileName
-
+# loads image
 img = cv2.imread(imageName)[:,:,::-1]   #opencv loads images in bgr. the [:,:,::-1] does bgr -> rgb
 
+#This takes the coordinates of the top left and bottom right of the bounding boxes and saves it as an np.array
 bboxes = np.array([[261.389, 299.722, (261.389+33.444), (299.722+30.056), 1],
                   [221.333, 284.889, (221.333+32.889), 284.889+26.111, 1]])
 
