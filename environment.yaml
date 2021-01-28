@@ -12,5 +12,6 @@ dependencies:
   - scipy
   - pip
   - opencv
+  - tqdm
   - pip:
     - "git+https://github.com/scaleapi/nucleus-python-client.git"
